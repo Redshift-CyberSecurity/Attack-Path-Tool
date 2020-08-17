@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+p{ 
+     text-align: center; 
+     overflow: overlay;
+     position: relative;
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(248, 248, 248)
+}
+
+#toolbox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border: 2px solid #AAAAAA;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+#toolbox input{
+    width: 30px;
+    opacity: 0.4;
+}
+#toolbox input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hidden-file-upload{
+    display: none;
+}
+
+#download-input{
+    margin: 0 0.5em;
+}
+
+.conceptG text{
+    pointer-events: none;
+}
+
+marker{
+    fill: #333;
+}
+
+g.conceptG circle{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 3px;
+}
+
+
+path.link.marked {
+    stroke: #ff0000;
+}
+
+path.link.selected.marked {
+    stroke: #fff200;
+}
+
+g.conceptG.marked circle {
+    fill: #ff0000;
+}
+
+g.conceptG.selected.marked circle {
+    fill: #fff200;
+}
+
+g.conceptG:hover circle{
+    fill: #7f7f7f;
+    cursor: pointer;
+}
+
+g.selected circle{
+    fill: #ff9000;
+}
+
+path.link {
+    fill: none;
+    stroke: #cdcdcf;
+    stroke-width: 15px;
+    cursor: default;
+}
+
+path.link:hover{
+    stroke: #555555;
+}
+
+g.connect-node circle{
+    fill: #BEFFFF;
+}
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: #ff9000;
+}
+
+line { /* Used for showing the grid */
+  stroke: rgb(212, 212, 212);
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #575757;
+    padding: 20px;
+    width: 600px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    left: 1px;
+    top: -400px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 2.0;
+}

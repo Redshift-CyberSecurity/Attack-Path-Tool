@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="graph-creator.css" />
+  </head>
+
+  <body>
+    <div id="graph">
+    <div id="toolbox">
+      <input type="file" id="hidden-file-upload"><input id="upload-input" type="image" title="Upload Graph" src="upload-icon.png">
+      <input type="image" id="download-input" title="Download Graph" src="download-icon.png">
+      <input type="image" id="save-svg" title="save svg" src="svg-icon.png" alt="save as svg">
+      <input type="image" id="save-png" title="save png" src="png-icon.png" alt="save as png">
+      <input type="image" id="delete-graph" title="Delete Graph" src="trash-icon.png">
+      
+      <span class="help-tip">
+        <input type="image" id="show-help" src="help-icon.png">
+        <p><b>Place Node:</b> Shift + Click<br>
+          <b>Link Nodes:</b> Shift + Click on Node, drag to another Node.<br>
+          <b>Change Label:</b> Shift + Click on Node.<br>
+          <b>Change Position of Label:</b> Arrow Keys.<br>
+          <b>Mark Link/Node:</b> Click Link/Node. Press <b>M</b>.<br>
+          <b>Move Link to Front:</b> Click Link. Press <b>F</b>.<br>
+          <b>Move Graph:</b> Click and drag on open space.<br>
+          <b>Delete Link/Node:</b> Click Link/Node, Press <b>DEL/BACKSPACE</b>.<br>
+          <b>Show/Snap to Grid:</b> Press <b>G</b>.
+        </p>
+      </span>
+    </div>
+    </div>
+
+    <script src="d3.v3.js" charset="UTF-8"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="graph-creator.js"></script>
+    <script src="svgG.js"></script>
+  </body>
+</html>
